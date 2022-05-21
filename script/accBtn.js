@@ -1,7 +1,7 @@
 function checkingAccount(){
     aBtn = document.getElementById("account-btn")
     if (localStorage.getItem("isLogin")){
-        aBtn.innerHTML = "<a href='../Profile/'><div class='account-btn btn-alter'>Lonhh</div></a>"
+        aBtn.innerHTML = "<a href='../Profile/'><div class='account-btn btn-alter' id='profile-btn'>Lonhh</div></a>"
         console.log(aBtn)
     }
 
@@ -16,14 +16,6 @@ function handleLogin(){
     )
 }
 
-function handleLogin(){
-    localStorage.setItem("isLogin","True")
-}
 
-function handleLogout(){
-    localStorage.setItem("isLogin","")
-}
 
-handleLogin()
-handleLogout()
 checkingAccount()
