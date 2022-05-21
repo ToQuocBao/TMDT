@@ -87,20 +87,31 @@
 .house-item .house-img .house-status{
     height: 30px;
     line-height: 30px;
-    width: 40%;
+    width: 60%;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: var(--theme-color);
     color: white;
     text-align: center;
     border-radius: 0 0 0 20px;
     opacity: 75%;
 }
 
+.ready{
+    background-color: var(--status-available-color);
+}
+
+.nearly{
+    background-color: var(--status-nearly-color);
+}
+
+.far{
+    background-color: var(--status-not-color);
+}
+
 .house-list .house-item .house-addr{
     display: block;
-    height: 40;
+    height: 40px;
     font-size: 0.8em;
     font-style: italic;
     /* line-height: 18px; */
@@ -112,8 +123,15 @@
     line-height: 40px;
     font-size: 1.5em;
     font-weight: 700;
-
 }
+
+.house-list .house-item .house-price{
+    font-size: 0.8em;
+    font-style: italic;
+    color: var(--theme-color);
+}
+
+
 .house-list .house-item .house-desc{
     text-align: justify;
     height: 100px;

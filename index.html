@@ -24,9 +24,9 @@
                 <div class="cart-icon"></div>
                 Giỏ hàng
             </div></a>
-            <a href="./LogIn/"><div class="account-btn btn-alter">
+            <div id="account-btn"><a href="./LogIn/"><div class="account-btn btn-alter">
                 Đăng nhập
-            </div></a>
+            </div></a></div>
         </div>
 
         <!-- main body -->
@@ -50,22 +50,24 @@
                     </h2>
                     <label for="province">Tỉnh:</label>
                     <select name="province" id="province">
-                        <option value="1">Tp HCM</option>
-                        <option value="2">Hà Nội</option>
-                        <option value="3">Đà Nẵng</option>
-                        <option value="4">Hải Phòng</option>
+                        <option value=""></option>
+                        <option value="Tp Hồ Chí Minh">Tp HCM</option>
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="TP. Đà Nẵng">TP. Đà Nẵng</option>
                     </select>
 
-                    <label for="quan">Quận/Huyện:</label>
-                    <select name="quan" id="quan">
+                    <label for="district">Quận/Huyện:</label>
+                    <select name="district" id="district">
+                        <option value=""></option>
                         <option value="1">Quận 1</option>
                         <option value="2">Quẩn 2</option>
                         <option value="3">Quận 3</option>
                         <option value="4">Quận 4</option>
                     </select>
 
-                    <label for="xa">Phường/xã:</label>
-                    <select name="xa" id="xa">
+                    <label for="ward">Phường/xã:</label>
+                    <select name="ward" id="ward">
+                        <option value=""></option>
                         <option value="1">Xã A</option>
                         <option value="2">Xã B</option>
                         <option value="3">Xã C</option>
@@ -78,14 +80,14 @@
                         Chi phí
                     </h2>
                     <label for="floor">Từ:</label>
-                    <input type="number" name="floor">
-                    <label for="ceil">Đến:</label>
-                    <input type="number" name="ceil">
+                    <input type="number" name="floor" id="floor">
+                    <label for="cell">Đến:</label>
+                    <input type="number" name="cell" id="cell">
                 </form>
 
             </div>
-            <div class="house-list">
-                <a href="./product/" class="house-item">
+            <div class="house-list" id = "house-list">
+                <!-- <a href="./product/" class="house-item">
                     <div class="house-img">
                         <div class="house-status">Available</div>
                     </div>
@@ -239,14 +241,14 @@
                         House Title
                     </div>
                     <div class="house-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique, dolor sed viverra rutrum, velit ex efficitur tellus, ut sodales neque felis eu lectus.</div>
-                </a>
+                </a> -->
                 <div class="clear"></div>
 
-                <div class="page-numbers">
+                <!-- <div class="page-numbers">
                     <span class="page-number-cell">Trang đầu</span>
                     <span class="page-number-cell">1</span>
                     <span class="page-number-cell">Trang cuối</span>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- footer -->
@@ -266,4 +268,7 @@
         </div>
     </div>
 </body>
+
+<script src="./script/accBtn.js"></script>
+<script type="module" src="./script/item.js"></script>
 </html>

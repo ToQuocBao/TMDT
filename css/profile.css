@@ -23,11 +23,11 @@ h2{
     height: 40px;
     padding: 5px 20px;
     border-radius: 20px;
-    border: 1px solid #00d1ff;
+    border: 1px solid var(--theme-color);
 }
 
 .user-pf .form-field input:focus{
-    border: 1px solid #00d1ff;
+    border: 1px solid var(--theme-color);
 }
 
 .form-btns{

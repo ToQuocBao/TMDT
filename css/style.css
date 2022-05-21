@@ -7,7 +7,11 @@
 }
 
 :root{
-    --theme-color: #00D1FF;
+    --theme-color: #888888;
+    --theme-secondary-color: #999999;
+    --status-available-color:#00D1FF;
+    --status-nearly-color: #FF4D00;
+    --status-not-color: #FF0000;
 }
 
 body{
@@ -45,20 +49,20 @@ a{
 
 
 .btn{
-    background-color: #00D1FF;
+    background-color: var(--theme-color);
     color: white;
     border: 1px solid white;
 }
 
 .btn-alter{
     background-color: white;
-    color: #00D1FF;
+    color: var(--theme-color);
     border: 1px solid var(--theme-color);
 }
 
 .btn:hover, .btn-alter:hover{
     opacity: 0.6;
-    background-color: #00d0ff;
+    background-color: var(--theme-secondary-color);
     color: white;
 }
 
@@ -161,7 +165,7 @@ a{
 
 .footer .contact:hover, .footer .aboutus:hover{
     /* opacity: 0.8; */
-    background-color: #11DDFF;
+    background-color: var(--theme-secondary-color);
 }
 
 .footer .social-icons{
